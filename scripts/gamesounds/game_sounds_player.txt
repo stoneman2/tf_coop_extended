@@ -113,24 +113,6 @@
 	"wave"			"misc/null.wav"
 }
 
-"Player.SpawnTFC"
-{
-	"channel"		"CHAN_BODY"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"player/r_tele1.wav"
-}
-
-"Player.JumpTFC"
-{
-	"channel"		"CHAN_BODY"
-	"volume"		"VOL_NORM"
-	"soundlevel"	"SNDLVL_NONE"
-	"pitch"			"PITCH_NORM"
-	"wave"			"player/plyrjmp8.wav"
-}
-
 "Player.UseDeny"
 {
 	"channel"		"CHAN_BODY"
@@ -658,14 +640,6 @@
 	"wave"		")weapons/weapon_crit_charged_off.wav"
 }
 
-"TFPlayer.InvulnerableIdle"
-{
-	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_74dB"
-	"volume"	".5"
-	"wave"		"player/invulnerable_idle.wav"
-}
-
 "TFPlayer.CritHit"
 {
 	"channel"	"CHAN_STATIC"
@@ -954,7 +928,7 @@
 
 "Selection.DemoClipSpin"
 {
-	"channel"	"CHAN_BODY"
+	"channel"	"CHAN_WEAPON"
 	"volume"	".5"
 	"soundlevel"  	"SNDLVL_NONE"
 	"wave"		"player/taunt_clip_spin.wav"
@@ -962,7 +936,7 @@
 
 "Selection.DemoClipSpinLong"
 {
-	"channel"	"CHAN_BODY"
+	"channel"	"CHAN_WEAPON"
 	"volume"	".5"
 	"soundlevel"  	"SNDLVL_NONE"
 	"wave"		"player/taunt_clip_spin_long.wav"
@@ -2758,7 +2732,6 @@
 	"wave"			"player/sniper_taunt_hawk.wav"
 }
 
-
 "taunt.broomfly"
 {
 	"channel"		"CHAN_BODY"
@@ -3046,7 +3019,7 @@
 
 "Taunt.TankForward"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		".5"
 	"pitch"			"PITCH_NORM"
 
@@ -3057,7 +3030,7 @@
 
 "Taunt.TankIdle"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
@@ -3068,7 +3041,7 @@
 
 "Taunt.TankReverse"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
@@ -3090,7 +3063,7 @@
 
 "Taunt.TankEnd"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
@@ -3294,7 +3267,7 @@
 
 "Taunt.MopedForward"
 {
-	"channel"		"CHAN_BODY"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
@@ -3471,7 +3444,7 @@
 
 "Taunt.LuxuryLoungeSip"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_VOICE"
 	"volume"		".75"
 	"pitch"			"PITCH_NORM"
 
@@ -4208,22 +4181,6 @@
 
 	"wave"	")player/taunt_yeti_standee_engineer_music.wav"
 
-}
-
-"Taunt.MediumClap"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"pitch"			"95,105"
-	"soundlevel"	"SNDLVL_74dB"
-	
-	"rndwave"
-		{
-			"wave"	")player/taunt_medium_clap1.wav"
-			"wave"	")player/taunt_medium_clap2.wav"
-			"wave"	")player/taunt_medium_clap3.wav"
-			"wave"	")player/taunt_medium_clap4.wav"
-		}
 }
 
 "Taunt.YetiStandeeSniperStep"
@@ -4978,6 +4935,49 @@
 	"wave"	")player/taunt_bumpkins_banjo_music_stop.wav"
 }
 
+"Taunt.RocketHoverStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".35"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			")player/taunt_rocket_hover_start.wav"
+}
+
+"Taunt.RocketHoverLoop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".35"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			")player/taunt_rocket_hover_loop.wav"
+}
+
+"Taunt.RocketHoverStop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".35"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			")player/taunt_rocket_hover_stop.wav"
+}
+
+"Taunt.RocketHoverStopThruster"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".35"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			")player/taunt_rocket_hover_stop_thruster.wav"
+}
 
 "Croc.SwimBurst"
 {
